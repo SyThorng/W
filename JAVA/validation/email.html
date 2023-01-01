@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="email">
+        <input type="button" value="cilnk" onclick="get1()">
+        <span id="demo"></span>
+    </form>
+</body>
+<script>
+    var email = document.getElementById("email");
+    var email_pw = /^[a-z]$+/;
+
+    function get1() {
+        if (email.vlaue.match(email_pw)) {
+            document.getElementById("demo").innerHTML = "Success";
+        } else {
+            document.getElementById("demo").innerHTML = "fiald";
+        }
+    }
+
+
+
+    var txtbox = document.getElementById("tfid");
+    var tfid = /^[a-z]$+^[0-9]+$/;
+
+    function get1() {
+        if (email.vlaue.match(email_pw)) {
+            document.getElementById("demo").innerHTML = "Success";
+        } else {
+            document.getElementById("demo").innerHTML = "fiald";
+        }
+    }
+</script>
+
+</html>

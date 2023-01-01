@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <SCript src="jquery-3.4.1.min.js"></SCript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        .c {
+            background-color: black;
+            height: 100px;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+        .c2 {
+            /* background-color: brown; */
+            width: 80px;
+            height: 60px;
+            padding: 10px;
+            text-align: center;
+            font-size: 60px;
+            color: white;
+            margin-top: 1px;
+        }
+
+        .c3 {
+            width: 80px;
+            height: 80px;
+            /* background-color: aqua; */
+            margin-left: 200px;
+            margin-top: 10px;
+            background-image: url(Sabay\ News_files/logo.png);
+            background-size: cover;
+        }
+
+        .c4 {
+            width: 120px;
+            height: 80px;
+            /* background-color: aqua; */
+            margin-left: 150px;
+            margin-top: 10px;
+            background-image: url(Sabay\ News_files/de.gif);
+            background-size: cover;
+        }
+
+        .down {
+            background-color: black;
+            width: 100%;
+            height: 400px;
+
+        }
+
+        .E1 {
+            background-color: red;
+            width: 100%;
+            height: 60px;
+        }
+
+        .e {
+            font-size: 30px;
+            padding: 10px;
+            color: white;
+            margin-left: 30px;
+        }
+
+        .q1 {
+            /* background-color: red; */
+            width: 40%;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        .q1 ul li a {
+            text-decoration: none;
+            font-size: 25px;
+            padding-top: 20px;
+            color: white;
+
+        }
+
+        .q1 ul li {
+            list-style: none;
+            margin-top: 10px;
+
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #rr {
+            margin-left: 50px;
+        }
+
+        .q3 {
+            background-color: aqua;
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            margin-top: 280px;
+            margin-left: 200px;
+            background-image: url(Sabay\ News_files/tt.gif);
+            background-size: cover;
+        }
+
+        .hh {
+            background-color: aquamarine;
+            height: 400px;
+            width: 100%;
+            z-index: 0;
+        }
+
+        /*Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {}
+
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+        /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {}
+
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {}
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            .c2 {
+                font-size: 30px;
+            }
+
+            .c3 {
+                width: 50px;
+                /* background-color: blue; */
+                height: 50px;
+                margin-left: 80px;
+                /* margin-right: 100px; */
+            }
+
+            .c4 {
+                background-color: brown;
+                width: 80px;
+                height: 50px;
+                margin-left: 80px;
+            }
+
+            .e {
+                font-size: 25px;
+                padding: 10px;
+                color: white;
+                margin-left: 30px;
+            }
+
+
+            .q1 ul li a {
+                font-size: 20px;
+            }
+
+            .down {
+                height: 330px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c">
+        <div class="c2" onclick="" id="menu"><i class="fa-solid fa-bars"></i></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+    </div>
+    <!-- <div class="hh"></div> -->
+
+    <div class="down" id="down_1">
+        <div class="E1">
+            <div class="e">
+                <i class="fa-solid fa-house-chimney"></i>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="q1">
+                <ul>
+                    <li>
+                        <a href="">កម្សាន្ត</a>
+                    </li>
+                    <li>
+                        <a href="">ជិវិត និង សង្គម</a>
+                    </li>
+                    <li>
+                        <a href="">ផ្លូវទៅស្រុក</a>
+                    </li>
+                    <li>
+                        <a href="">World Cup</a>
+                    </li>
+                    <li>
+                        <a href="">Product</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="q1" id="rr">
+                <ul>
+                    <li>
+                        <a href="">សង្គម</a>
+                    </li>
+                    <li>
+                        <a href="">ផ្លូវទៅស្រុក</a>
+                    </li>
+                    <li>
+                        <a href="">ជិវិត និង សង្គម</a>
+                    </li>
+                    <li>
+                        <a href="">Product</a>
+                    </li>
+                    <li>
+                        <a href="">Product</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="q3">
+
+            </div> -->
+
+        </div>
+    </div>
+</body>
+<script>
+    // off()
+    // function off() {
+    //     $('#down_1').hide();
+    // }
+    $(document).ready(function () {
+        $('#menu').click(function () {
+            $('#down_1').slideToggle(1000);
+
+        })
+    })
+</script>
+
+</html>

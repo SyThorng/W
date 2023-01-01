@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    score: <input type="text" id="score" onkeyup="grade()"> <br><br>
+    result: <input type="text" id="result"><br>
+
+</body>
+<script>
+
+    var total = document.getElementById("score")
+    var result = document.getElementById("result")
+
+    function grade() {
+        if (total.value >= 90 && total.value >= 100) {
+            result.value = 'A';
+        } else if (total.value >= 80 && total.value >= 90) {
+            result.value = 'B';
+        } else if (total.value >= 70 && total.value >= 80) {
+            result.value = 'C';
+        } else if (total.value >= 60 && total.value >= 70) {
+            result.value = 'D';
+        } else if (total.value >= 50 && total.value >= 60) {
+            result.value = 'E';
+        } else if (total.value < 50) {
+            result.value = 'F';
+        }
+        // else {
+        //     result.value = 'GG'
+        // }
+    }
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        .box {
+            width: 50%;
+            height: 500px;
+            background-color: black;
+            text-align: center;
+        }
+
+        .box1 {
+            width: 40%;
+            height: 300px;
+            background-color: red;
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="box1">
+            <h1>1</h1>
+
+            <button id="btn1">click</button>
+        </div>
+
+        <div class="box1">
+            <h1>2</h1>
+            <button id="btn2">click me</button>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#btn1').click(function () {
+            // $(this).parent().css({ 'background-color': 'blue' })
+            // $(this).parents().remove();
+            // $(this).parents('.box').css({ 'background-color': 'blue' })
+            $(this).parent('.box1').find('h1').html("CSSS");
+        })
+    })
+</script>
+
+</html>

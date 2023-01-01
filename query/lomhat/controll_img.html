@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="con_img.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="size_box">
+            <div class="slide" style="background-image:url(https://assets.pandaily.com/uploads/2022/01/0106.png) ;">
+            </div>
+            <div class="slide"
+                style="background-image:url(https://www.thestreet.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTY4NTE3ODM1MDQyNDAwMDIy/alibaba-is-a-buy-the-dip-stock-on-singles-day-pullback.png) ;">
+            </div>
+            <div class="slide"
+                style="background-image:url(https://i0.wp.com/www.importardechina.com/wp-content/uploads/2016/07/142-alibaba-logistics.jpg?fit=1024%2C576&ssl=1) ;">
+            </div>
+            <div class="slide"
+                style="background-image:url(https://www.importardechina.cl/wp-content/uploads/2020/06/alibaba-express-o-aliexpress-1170x487.jpg) ;">
+            </div>
+            <div class="back"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="next"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="page">
+                <ul>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+
+        var numSlider = $('.slide').length;
+
+        $('.slide').hide();
+        var i = 0;
+        $('.slide').eq(i).show();
+
+        // silde next
+        $('.next').click(function () {
+            $('.slide').eq(i).hide();
+            i++;
+            if (i >= numSlider) {
+                i = 0;
+            }
+            $('.slide').eq(i).show();
+        })
+
+        $('.back').click(function () {
+            $('.slide').eq(i).hide();
+            if (i == 0) {
+                i = numSlider; Ø
+                // i=4;
+            }
+            i--;
+            $('.slide').eq(i).show();
+        })
+    })
+</script>
+
+</html>

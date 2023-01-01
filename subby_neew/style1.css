@@ -1,0 +1,219 @@
+
+h1,h2,h3,p,ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    font-family: Arial, 'Battambang', cursive;
+}
+div{
+    box-sizing: border-box;
+}
+.bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-contaner{
+    background-color: black;
+    padding: 15px;
+}
+.logo img{
+    height: 75px;
+    float: left;
+}
+.ads img{
+    height: 75px;
+    float: right;
+}
+.menu{
+    background-color: red;
+    height: 45PX;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(202, 199, 199);
+    padding: 9px 12px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Bayon', sans-serif;
+}
+.menu ul li a:hover{
+    color: white;
+}
+.menu ul li:first-child{
+    display: none;
+}
+.news-container{
+    
+    margin-top: 10px;
+   
+}
+.news-container .cate-title{
+    border-bottom: 2px solid red;
+    width: 100%;
+    float: left;
+}
+.news-container .cate-title h1{
+    background-color: red;
+    float: left;
+    font-size: 30px;
+    padding: 10px 20px;
+    color: white;
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+   
+}
+.news-container .box{
+    padding: 20px;
+    box-shadow: 2px 2px 2px 0 black;
+    width: 100%;
+    float: left;
+}
+.news-container .box .box2{
+    width: 49%;
+    height: 380px;
+    background-color: aqua;
+    float: left;
+}
+
+.news-container .box .box2:nth-child(2){
+    margin-left: 2%;
+}
+.news-container .box .box2 .box-img{
+    width: 100%;
+    height: 60%;
+    background-color: chartreuse;
+}
+.news-container .box .box2 .box-text{
+    width: 100%;
+    height: 40%;
+    background-color: coral;
+
+}
+.news-container .box .box2 .box-text p{
+   /* line-height: 50px; */
+   padding: 10px;
+}
+.news-container .box .box3{
+    width: 100%;
+    height: 200px;
+    background-color: coral;
+    float: left;
+    margin-top: 10px;
+    display: flex;
+}
+.news-container .box .box3 .img{
+    width: 40%;
+    height: 100%;
+    background-color: brown;
+}
+.news-container .box .box3 .img img{
+    width: 100%;
+    height: 100%;
+}
+.news-container .box .box3 .text{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(111, 232, 12);
+}
+.news-container .box .box3 .text h3{
+    padding: 10px;
+}
+.ads1{
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+}
+.ads1 ul li{
+    width: 100%;
+    float: left; 
+    margin-bottom: 10px;
+   
+}
+.ads1 ul li img{
+    width: 100%;
+    float: left;
+    
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.news-container .box .box3{
+        width: 100%;
+        height: 150px;
+    }
+    .news-container .box .box3 .text h3{
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .news-container .box .box2{
+        width: 49%;
+        height: 340px;
+        float: left;
+    } 
+    .news-container .box .box3 .img{
+        width: 100%;
+        height: 50%;
+        background-color: brown;
+    }
+    .news-container .box .box3 .text{
+        width: 100%;
+        height: 50%;
+        background-color: rgb(111, 232, 12);
+    }
+    
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    .logo{
+        text-align: center;
+    }
+	.logo img{
+        height: 75px;
+        float: none;
+    }
+    .ads{
+        text-align: center;
+    }
+    .ads img{
+        margin-top: 10px;
+        height: 65px;
+        float: none;
+    }
+    
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.logo{
+        text-align: center;
+    }
+	.logo img{
+        height: 75px;
+        float: none;
+    }
+    .ads{
+        text-align: center;
+    }
+    .ads img{
+        margin-top: 10px;
+        height: 45px;
+        float: none;
+    }
+}

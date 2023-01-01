@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            width: 60%;
+            height: 800px;
+            background-color: black;
+            border: 2px solid red;
+            margin: auto;
+        }
+
+        .box1 {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 20px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+        </div>
+    </div>
+    <button style="font-size:40px ;" id="btn">Append</button>
+</body>
+<script>
+    $(document).ready(function () {
+        var i = 0;
+        var box1 = '<div class="box1"> </div>';
+        $('#btn').click(function () {
+            // $('.box').after(box1)
+            // $('.box').before(box1)
+            $('.box').append(box1)
+
+        })
+    })
+</script>
+
+</html>

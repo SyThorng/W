@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo1 {
+        width: 500px;
+        height: 500px;
+        /* background-color: black; */
+        background-image: url(G2.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body>
+    <div id="demo1">
+    </div><br><br>
+    <input type="button" value="Hide" onclick="test()" id="bt">
+</body>
+<script>
+    var b = 0;
+    function test() {
+        var index = document.getElementById("demo1");
+        if (b == 0) {
+            document.getElementById("bt").value = "Show";
+            index.style.display = "none";
+            b = 1;
+        } else if (b == 1) {
+            document.getElementById("bt").value = "Hide";
+            index.style.display = "block"
+            b = 0;
+        }
+    }   
+</script>
+
+</html>

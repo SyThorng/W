@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        img {
+            float: left;
+            width: 300px;
+            height: 400px;
+            margin-left: 50px;
+        }
+
+        /* .img img {
+            width: 100%;
+            height: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="img1"><img
+            src="https://assets.reedpopcdn.com/digitalfoundry-2015-god-of-war-3-remastered-face-off-1437676509908.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/digitalfoundry-2015-god-of-war-3-remastered-face-off-1437676509908.jpg"
+            alt=""></div>
+    <div class="img1"><img src="https://i.ytimg.com/vi/z1JX_VQ2OnU/maxresdefault.jpg" alt=""></div>
+    <div class="img1"><img src="https://assets1.ignimgs.com/2015/07/13/gow3remastered1600jpg-9bec8e_610w.jpg?width=3840"
+            alt=""></div>
+    <div class="img1"><img
+            src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/03/God-of-War-3-feature.jpg" alt="">
+    </div>
+    <div class="img1"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbOWzbvQWhAdUQJzE0KPVgtAqE-tNInyySoyyGMinlcZWvsFsnZ8HF9vMW2m0h1oVL7M&usqp=CAU"
+            alt=""></div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.img').mouseover(function () {
+            var ethis = $(this);
+            var img2 = ethis.data("img2");
+        });
+        $('.img').mouseout(function () {
+            var ethis = $(this);
+            var img1 = ethis.data("img1");
+            ethis.attr("src", img)
+        })
+    })
+</script>
+
+</html>

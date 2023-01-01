@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .ads img {
+            height: 80px;
+            float: left;
+        }
+
+        .ads2 img {
+            height: 80px;
+            float: right;
+        }
+
+        .ff {
+            background-color: red;
+        }
+
+        ul li {
+            list-style: none;
+            float: left;
+            padding: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 30px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: white;
+        }
+
+        ul li:first-child {
+            display: none;
+        }
+
+        .new_container1 .cate-title h1 {
+            background-color: red;
+            float: left;
+            font-size: 40px;
+            padding: 10px 20px;
+            clip-path: polygon(0 0, 77% 1%, 100% 100%, 0% 100%);
+            color: white;
+        }
+
+        .new_container2 {
+            background-color: aqua;
+            margin-top: 10px;
+
+        }
+
+        .new_container1 {
+            margin-top: 10px;
+        }
+
+        .new_container1 .cate-title {
+            border-bottom: 3px solid red;
+            width: 100%;
+            float: left;
+        }
+
+        .new_container1 .box .box2 {
+            background-color: blue;
+            width: 49%;
+            height: 360px;
+            float: left;
+        }
+
+        .new_container1 .box .box2:nth-child(2) {
+            margin-left: 2%;
+        }
+
+        .new_container1 .box .box2 .box-img {
+            width: 100%;
+            height: 60%;
+            background-color: black;
+        }
+
+        .new_container1 .box .box2 .box-text {
+            width: 100%;
+            height: 40%;
+            background-color: chartreuse;
+        }
+
+        .new_container1 .box {
+            width: 100%;
+            height: 450px;
+            box-shadow: 2px 2px 2px 0 black;
+        }
+
+        .box-img {
+            background-image: url(god.jpeg);
+            background-size: cover;
+        }
+
+        .box-text {
+            padding: 5px;
+        }
+
+        .box3 {
+            margin-top: 20px;
+            height: 250px;
+            width: 100%;
+            display: flex;
+        }
+
+        .img-1 {
+            background-color: chartreuse;
+            width: 40%;
+            height: 100%;
+        }
+
+        .text-1 {
+            background-color: blue;
+            width: 60%;
+            height: 100%;
+        }
+
+        /*Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {}
+
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+        /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .ads2 img {
+                height: 70px;
+            }
+
+            .ads img {
+                height: 70px;
+            }
+        }
+
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .ads img {
+                height: 65px;
+                float: none;
+                margin-bottom: 10px;
+            }
+
+            .ads {
+                text-align: center;
+            }
+
+            .ads2 img {
+                height: 65px;
+                text-align: center;
+            }
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+
+            .ads img {
+                height: 55px;
+                float: none;
+                margin-bottom: 10px;
+            }
+
+            .ads {
+                text-align: center;
+            }
+
+            .ads2 img {
+                height: 55px;
+                text-align: center;
+            }
+
+            ul li:first-child {
+                display: block;
+            }
+
+            ul li:not(:first-child) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-black">
+        <div class="container  " style="padding: 10px;">
+            <div class="row logo">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  ads"><img src="lo1.png" alt=""></div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 ads2"> <img src="lo2.gif" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ff">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-list"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">HOme</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-item">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 col-12  new_container1">
+                <div class="cate-title">
+                    <h1>កម្សាន្ត</h1>
+                </div>
+                <div class="box">
+                    <div class="box2">
+                        <div class="box-img"></div>
+                        <div class="box-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+                            vitae maxime tenetur reiciendis repellendus error. Eum saepe quas, facilis fuga eos iste
+                            ullam enim vel assumenda explicabo,.
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="box-img"></div>
+                        <div class="box-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+                            vitae maxime tenetur reiciendis repellendus error. Eum saepe quas, facilis fuga eos iste
+                            ullam enim vel assumenda explicabo,.
+                        </div>
+                    </div>
+                </div>
+                <div class="box3 bg-black">
+                    <div class="img-1"><img src="god.jpeg" alt="" width="100%" height="100%"></div>
+                    <div class="text-1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, et veritatis mollitia
+                        consequuntur pariatur quia iste impedit nihil, esse, eveniet aut! Id molestiae aspernatur quas
+                        sunt soluta dicta quidem deserunt.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12  new_container2">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="lo2.gif" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- ss col-12 -->

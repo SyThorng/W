@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+
+    </table>
+</body>
+<script>
+    var id, name, sex, n;
+    var sc1, sc2, sc3, avg, grade;
+
+    n = prompt("Input N: ");
+    for (i = 0; i < n; i++) {
+        id = prompt("Input ID");
+        name = prompt("Input Name");
+        sex = prompt("Input Sex");
+        sc1 = prompt("Input sc1");
+        sc2 = prompt("Input sc2");
+        sc3 = prompt("Input sc3");
+    }
+    var total = parseInt(sc1) + parseInt(sc2) + parseInt(sc3);
+    avg = total / 3;
+
+    if (avg >= 90 && avg >= 100) {
+        grade = 'A';
+    } else if (avg >= 80 && avg >= 90) {
+        grade = 'B';
+    } else if (avg >= 70 && avg >= 80) {
+        grade = 'C';
+    } else if (avg >= 60 && avg >= 70) {
+        grade = 'D';
+    } else if (avg >= 50 && avg >= 60) {
+        grade = 'E';
+    } else if (avg < 50) {
+        grade = 'F';
+    }
+    var i = 0;
+    for (i = 0; i < n; i++) {
+        document.write("<table border=1 >");
+        document.write("<th>ID</th><th>Name</th><th>Sex</th><th>Math</th><th>Khmer</th><th>Physical</th><th>Total</th><th>Average</th><th>Grade</th>")
+        document.write("<tr> <td>" + id + "</td> <td>" + name + "</td> <td>" + sex + "</td><td>" + sc1 + "</td><td>" + sc2 + "</td><td>" + sc3 + "</td><td>" + total + "</td><td>" + avg + "</td><td>" + grade + "</td> </tr>")
+        document.write("</table >")
+    }
+
+
+</script>
+
+</html>

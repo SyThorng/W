@@ -1,0 +1,53 @@
+.size_box {
+    width: 900px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.086);
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.back {
+    top: 25%;
+    position: absolute;
+    background-color: red;
+    width: 4%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next {
+    top: 25%;
+    position: absolute;
+    background-color: coral;
+    width: 4%;
+    height: 40px;
+    left: 69%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    font-size: 20px;
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    margin: auto;
+    position: absolute;
+}

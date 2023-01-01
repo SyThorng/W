@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kk {
+            background-color: red;
+            height: 100px;
+            width: 100%;
+        }
+
+        .kk ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .kk ul li {
+            float: left;
+            list-style: none;
+            padding: 20px;
+
+        }
+
+        .kk ul li a {
+            text-decoration: none;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="demo" class="kk">
+        <!-- <ul>
+            <li>
+                <a href=""> កម្សាន្ត</a>
+            </li>
+            <li>
+                <a href="">បច្ចេកវីទ្យា</a>
+            </li>
+            <li>
+                <a href=""> កីឡា</a>
+            </li>
+        </ul> -->
+    </div>
+
+    <input type="button" value="click " onclick="my()">
+</body>
+<script>
+    var arr = ['footer-logo.png', "Facebook", "youtube"];
+    function my() {
+        var num = arr.length;
+        var text1 = '';
+        for (var i = 0; i < num; i++) {
+            text1 += '<ul> <li> <a href=""><img src="' + arr[i] + ' " </a> </li></ul> ';
+        }
+        document.getElementById("demo").innerHTML = text1;
+    }
+</script>
+
+</html>

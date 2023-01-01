@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <label for=""> number1</label> <br> <br>
+    <input type="text" id="num1"> <br> <br>
+    <label for=""> number2</label> <br> <br>
+    <input type="text" id="num2"><br><br>
+    <label for=""> Resuft</label> <br> <br>
+    <input type="text" id="Re">
+    <input type="button" value="++++" onclick="my()">
+</body>
+<script>
+
+    function my() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var re = parseInt(num1) + parseInt(num2);
+        document.getElementById("Re").value = re;
+    }
+
+</script>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function v1() {
+            var t1 = document.getElementById("n1").value;
+            var t2 = document.getElementById("n2").value;
+            var re1 = parseInt(t1) + parseInt(t2);
+            document.getElementById("re").value = re1;
+        }
+
+        function v2() {
+            var t1 = document.getElementById("n1").value;
+            var t2 = document.getElementById("n2").value;
+            var re1 = parseInt(t1) - parseInt(t2);
+            document.getElementById("re").value = re1;
+        }
+        function v3() {
+            var t1 = document.getElementById("n1").value;
+            var t2 = document.getElementById("n2").value;
+            var re1 = parseInt(t1) * parseInt(t2);
+            document.getElementById("re").value = re1;
+        }
+
+        function v4() {
+            var t1 = document.getElementById("n1").value;
+            var t2 = document.getElementById("n2").value;
+            var re1 = parseInt(t1) / parseInt(t2);
+            document.getElementById("re").value = re1;
+        }
+    </script>
+</head>
+
+<body>
+    <label for="">Input Number1</label><br><br>
+    <input type="text" id="n1"><br><br>
+
+    <label for=""></label><br>Input number2 <br> <br>
+    <input type="text" id="n2"> <br> <br>
+
+    <label for=""></label><br>Resuft<br> <br>
+    <input type="text" id="re"> <br> <br>
+
+    <input type="button" value=" + " onclick="v1()"> &nbsp;
+    <input type="button" value=" - " onclick="v2()">&nbsp;
+    <input type="button" value=" * " onclick="v3()">&nbsp;
+    <input type="button" value=" / " onclick="v4()">&nbsp;
+</body>
+
+
+</html>
+
+<!-- <body>
+    <label for=""> number1</label> <br> <br>
+    <input type="text" id="num1"> <br> <br>
+    <label for=""> number2</label> <br> <br>
+    <input type="text" id="num2"><br><br>
+    <label for=""> Resuft</label> <br> <br>
+    <input type="text" id="Re">
+    <input type="button" value="++++" onclick="my()">
+</body>
+<script>
+
+    function my() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var re = parseInt(num1) + parseInt(num2);
+        document.getElementById("Re").value = re;
+    }
+
+</script>
+
+</html> --> -->

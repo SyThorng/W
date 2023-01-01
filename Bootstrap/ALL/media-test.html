@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .page{
+            background-color: black;
+            height: 500px;
+            padding: 2px;
+        }
+        .p{
+            background-color: darkviolet;
+            width: 100%;
+            height: 100%;
+        }
+        .p .pic{
+            background-color: red;
+            width: 100%;
+            height: 60%;
+        }
+        .p .type{
+            background-color: darkgoldenrod;
+            width: 100%;
+            height: 40%;
+        }
+
+        @media (min-width: 1200px){
+            
+        }
+
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            
+        }
+
+        /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            
+        }
+
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            .p .pic{
+            background-color: red;
+            width: 55%;
+            height: 100%;
+            float: left;
+            
+            }
+
+            .p .type{
+            background-color: darkgoldenrod;
+            width: 45%;
+            height: 100%;
+            float: left;
+
+            }
+           .page{
+            background-color: black;
+            height: 176px;
+            padding: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 page">
+               <div class="p">
+                    <div class="pic"></div>
+                    <div class="type"></div>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 page"> 
+                <div class="p">
+                    <div class="pic"></div>
+                    <div class="type"></div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 page">
+                <div class="p">
+                    <div class="pic"></div>
+                    <div class="type"></div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 page">
+                <div class="p">
+                    <div class="pic"></div>
+                    <div class="type"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

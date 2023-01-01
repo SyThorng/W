@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <style>
+            .ler{
+                background-color: black;
+                padding: 20px;
+            }
+            .ler-knong{
+                /* background-color: red; */
+            }
+            .rubti1 img{
+                height: 70px;
+                float: left;
+            }
+            .rubti2 img{
+                height: 70px;
+                float: right;
+            }
+            .ti2{
+                background-color: red;
+            }
+            ul li{
+                list-style: none;
+                float: left;
+                
+            }
+            ul li a{
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                padding: 30px;
+                font-family: 'Kdam Thmor Pro', sans-serif;
+            }
+            ul li:first-child{
+                display: none;
+            }
+            /*Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px){
+            
+        }
+
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            
+        }
+
+        /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            
+        }
+
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .rubti2 img{
+                /* height: 60px; */
+                margin-top: 10px;
+                width: 100%;
+            }
+            .rubti1{
+                text-align: center;
+            }
+            .rubti1 img{
+                float: none;
+                /* height: 60px; */
+            }
+
+            
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            .rubti1{
+                text-align: center;
+            }
+            .rubti1 img{
+                float: none;
+                height: 50px;
+            }
+            .rubti2 img{
+                width: 100%;
+                height: 50px;
+                margin-top: 10px;
+            }
+            ul li:not(:first-child){
+                display: none;
+            }
+            ul li:first-child{
+                display: block;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid ler">
+        <div class="container ler-knong">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 rubti1">
+                        <img src="lo1.png" alt="">
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 rubti2">
+                        <img src="lo2.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ti2">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 menu">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-solid fa-list"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

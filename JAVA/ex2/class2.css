@@ -1,0 +1,33 @@
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(240, 216, 216, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.container {
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(148, 66, 219, 0.452) 0px 10px 70px 50px;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 100px;
+}
+
+.inner {
+    font-size: 70px;
+    padding: 10px;
+    margin-left: 100px;
+    background: none;
+    border: none;
+}

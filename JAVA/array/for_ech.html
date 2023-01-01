@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .demo {
+            background-color: red;
+            height: 90px;
+
+        }
+
+        .demo ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo ul li {
+            padding: 0;
+            list-style: none;
+        }
+
+        .demo ul li {
+            float: left;
+        }
+
+        .demo ul li a {
+            display: block;
+            padding: 20px 30px;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            font-family: 'Koulen', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <!-- <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">HOme</a>
+            </li>
+        </ul> -->
+
+    </div>
+</body>
+<script>
+
+
+
+    var arr = ['<i class="fa-solid fa-house-chimney"></i>', ' <i class="fa-brands fa-facebook"></i>',
+        '<i class="fa-brands fa-square-google-plus"></i>', 'Messenger'];
+    my();
+    function my() {
+
+        document.getElementById("");
+        var text = '';
+        for (var i in arr) {
+            text += ' <ul><li><a href="">' + arr[i] + ' </a></li></ul>';
+            // document.getElementById("demo_id").innerHTML = text;
+        }
+        // jab name class and ID
+        document.querySelector(".demo").innerHTML = text;
+
+    }
+</script>
+
+</html>

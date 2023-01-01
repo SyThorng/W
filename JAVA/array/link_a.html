@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo {
+        width: 500px;
+        height: 200px;
+
+    }
+</style>
+
+<body>
+    <div id="demo">
+
+    </div>
+    <input type="button" onclick="my()" value="click me">
+</body>
+<script>
+    var arr = ["google", "Facebook", "youtube"];
+
+    function my() {
+        var num = arr.length;
+        var text1 = '';
+        for (var i; i < num; i++) {
+            text1 += '<ul> <li> <a href="">' + arr[i] + ' </a> </li></ul> '
+        }
+        document.getElementById("demo").innerHTML = arr
+    }
+</script>
+
+</html>

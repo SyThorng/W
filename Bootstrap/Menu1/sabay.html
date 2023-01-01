@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            padding: 20px;
+        }
+
+        .logo img {
+            height: 70px;
+            float: left;
+        }
+
+        .ads img {
+            height: 70px;
+            float: left;
+        }
+
+        .ff {
+            background-color: red;
+        }
+
+        ul li {
+            list-style: none;
+            float: left;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 20px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+        ul li:first-child {
+            display: none;
+        }
+
+        /*Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {}
+
+        /*Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+        /*Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {}
+
+        /*Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .logo {
+                text-align: center;
+            }
+
+            .logo img {
+                float: none;
+                margin-top: 10px;
+                height: 60px;
+            }
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            .logo {
+                text-align: center;
+            }
+
+            .logo img {
+                float: none;
+            }
+
+            .ads img {
+                height: 60px;
+                margin-top: 20px;
+            }
+
+            ul li:not(:first-child) {
+                display: none;
+            }
+
+            ul li:first-child {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-black page">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 logo">
+                    <img src="lo1.png" alt="">
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 ads">
+                    <img src="lo2.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ff">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-list"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a href="">សង្គម</a>
+                        </li>
+                        <li>
+                            <a href="">បច្ចេកវិទ្យា</a>
+                        </li>
+                        <li>
+                            <a href="">កីឡា</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

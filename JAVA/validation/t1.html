@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="">
+        <label for=""> Name</label>
+        <input type="text" id="txt">
+        <input type="button" value="click me" onclick="get()">
+    </form>
+</body>
+<script>
+    var txt1 = document.getElementById("txt");
+
+    function get() {
+        var num = txt1.value;
+        if (num == "ski") {
+            alert("Success");
+        } else {
+            alert("faild")
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            width: 500px;
+            float: left;
+            background-color: grey;
+
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li {
+
+            width: 100%;
+            float: left;
+            list-style: none;
+        }
+
+        .menu ul li a i {
+            float: right;
+            transition: 0.5s;
+            margin-right: 20px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 20px 10px;
+            background-color: rgba(12, 11, 11, 0.628);
+            border-bottom: 2px solid white;
+        }
+
+        .sub_menu ul li a {
+            background-color: white;
+            color: black;
+            border-bottom: 2px solid black;
+        }
+
+        .menu ul li .sub_menu {
+            width: 90%;
+            margin: auto;
+            display: block;
+            /* display: none; */
+        }
+
+        .menu ul li a:hover {
+            background-color: rgba(245, 222, 179, 0.545);
+        }
+
+        .dow {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="" class="m1"> Facebook <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                <div class="sub_menu">
+                    <ul>
+                        <li>
+                            <a href="">Home1</i></a>
+                        </li>
+                        <li>
+                            <a href="">Home2</a>
+                        </li>
+                        <li>
+                            <a href="">Home3</a>
+                        </li>
+                        <li>
+                            <a href="">Home4</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+            <li>
+                <a href="">Youtube <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </li>
+            <li>
+                <a href="">Google <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $('.menu').on('click', '.m1', function () {
+            var ethis = $(this);
+            var parent1 = ethis.parent();
+            parent1.find('.sub_menu').slideToggle(1000);
+
+            var num1 = ethis.find(".dow");
+            if (num1.length == 0) {
+                ethis.find('i').addClass('dow');
+                ethis.css({ "border-bottom": "5px solid red" });
+            } else {
+                ethis.find('i').removeClass('dow');
+                ethis.css({ "border-bottom": "1px solid white" });
+            }
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal_cs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <button class="dark1" id="dark2"><i class="fa-regular fa-moon"></i></button>
+    <div class="container">
+        <div class="cls">
+            <table>
+                <tr>
+                    <td colspan="3"><input type="text" id="result" class="re" placeholder="0"></td>
+                    <td><input type="button" value="C" class="itemc" onclick="cl()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" class="item " onclick="Num(1)"> </td>
+                    <td><input type="button" value="2" class="item " onclick="Num(2)"></td>
+                    <td><input type="button" value="3" class="item " onclick="Num(3)"></td>
+                    <td><input type="button" value="/" class="item " onclick="Num('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" class="item " onclick="Num(4)"></td>
+                    <td><input type="button" value="5" class="item " onclick="Num(5)"></td>
+                    <td><input type="button" value="6" class="item " onclick="Num(6)"></td>
+                    <td><input type="button" value="-" class="item " onclick="Num('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" class="item " onclick="Num(7)"></td>
+                    <td><input type="button" value="8" class="item " onclick="Num(8)"></td>
+                    <td><input type="button" value="9" class="item " onclick="Num(9)"></td>
+                    <td><input type="button" value="+" class="item " onclick="Num('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="." class="item " onclick="Num('.')"></td>
+                    <td><input type="button" value="0" class="item " onclick="Num('0')"></td>
+                    <td><input type="button" value="=" class="item " onclick="equal('=')"></td>
+                    <td><input type="button" value="*" class="item " onclick="Num('*')"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="scrip.js"></script>
+</body>
+
+</html>

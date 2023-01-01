@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSENESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .c1{
+            background-color: rgba(105, 105, 105, 0.22);
+            width: 20%;
+            height: 1700px;
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            overflow: hidden;
+            
+            /* position: fixed; */
+        }
+        .logo{
+            /* background-color: aqua; */
+            width: 100%;
+            height: 200px;
+        }
+        .logo img{
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        .t2{
+            /* background-color: blue; */
+            width:100%;
+            height:170px;
+        }
+        .l1{
+            /* background-color: aliceblue; */
+            height: 60%;
+            width: 60%;
+            margin-left: 30%;
+            padding: 20px;
+            /* overflow: hidden; */
+        }
+        .search{
+            /* background-color: blue;
+            width: 100%;
+            height: 100px; */
+        }
+        .l1{
+            transform: translateY(-10%);
+        }
+        .t2{
+            transform: translateY(-5%);
+        }
+        input[type=text]{
+            font-size: 30px;
+            border-radius: 10px;
+            margin-left: 40px;
+            height: 60px;
+            width: 80%;
+            border: 0px solid white;
+        }
+        .menu ul{
+            list-style: none;
+        }
+        .menu ul li{
+            padding: 8px;
+        }
+        .menu ul li a{
+            display: block;
+            text-decoration: none;
+            background-color: rgba(0, 255, 255, 0);
+            padding: 10px;
+            border-radius: 10px;
+            transform: translateX(-6%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Bungee Spice', cursive;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+        .menu li a{
+            color: black;
+            font-size: 30px;
+        }
+        .menu li a:hover{
+                background-color: rgba(128, 128, 128, 0.858);
+
+        }
+        .k1{
+            /* background-color: blue; */
+            width: 20%;
+            height: 50px;
+            margin-left: 620px;
+            position:absolute;
+            margin-top: 60px;
+            color: rgba(0, 0, 0, 0.575);
+            font-size: 40px;
+            font-family: 'Bungee Spice', cursive;
+            
+        }
+        .k2{
+            width: 35%;
+            height: 50px;
+            margin-left: 620px;
+            position:absolute;
+            margin-top: 200px;
+            color: rgba(0, 0, 0, 0.942);
+            font-size: 60px;
+            /* font-family: 'Angkor', cursive;
+            font-family: 'Bungee Spice', cursive; */
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            /* font-family: 'Nokora', sans-serif; */
+        }
+        .photo{
+            background-color:grey;
+            background-image: url(/CSS/Sabay/yy.gif);
+            background-size: cover;
+
+            width: 76%;
+            height: 1000px;
+            margin-left: 620px;
+            position:absolute;
+            margin-top: 300px;
+            border-radius: 40px;
+        }
+        .day{
+            /* background-color: blue; */
+            width: 10%;
+            height: 50px;
+            margin-left: 10%;
+            margin-top: 270px;
+            font-size: 30px;
+            color: black;
+
+            font-family: 'Angkor', cursive;
+            font-family: 'Bungee Spice', cursive;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-family: 'Nokora', sans-serif;
+        }
+        .w{
+            /* background-color: aqua; */
+            width: 80%;
+            height: 200px;
+            margin-left: 10%;
+            margin-top: 40px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 70px;
+            color: black;
+        }
+        .bo li a{
+            background-color: red;
+            width: 250px;
+            height: 70px;
+            margin-left: 9%;
+            margin-top: 50px;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            border-radius: 20px;
+        }
+        .bo li a{
+            list-style: none;
+        }
+        .bo ul li a{
+            text-decoration: none;
+        }
+        .p2{
+            /* background-color: blue; */
+            width: 400px;
+            height: 100px;
+            margin-left: 22%;
+            margin-top: 1350px;
+            position:absolute;
+            font-size: 40px;
+        }
+        .F1{
+            /* background-color: rgba(0, 0, 0, 0.431); */
+            width:76% ;
+            height: 600px;
+            margin-left: 620px;
+            margin-top: 54%;
+            position: absolute;
+            /* overflow: hidden; */
+            display: flex;
+        }
+        .F2{
+            /* background-color: black; */
+            width: 32%;
+            height: 100%;
+            position: absolute;
+            border-radius: 60px;
+            
+            box-shadow: 2px 9px 2px 2px rgba(128, 128, 128, 0.609);
+
+        }
+        .F3{
+            /* background-color:black; */
+            width: 32%;
+            height: 100%;
+            position: absolute;
+            margin-left: 34%;
+            border-radius: 60px;
+            box-shadow: 2px 9px 2px 2px rgba(128, 128, 128, 0.609);
+
+        }
+        .F4{
+            /* background-color:black; */
+            width: 32%;
+            height: 100%;
+            position: absolute;
+            margin-left: 68%;
+            border-radius: 60px;
+            box-shadow: 2px 9px 2px 2px rgba(128, 128, 128, 0.609);
+            
+        }
+        .x1{
+            background-image: url(p1.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .x2{
+            /* background-color: blue; */
+            width: 200px;
+            height: 50px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: red;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .x3{
+            /* background-color: red; */
+            width: 90%;
+            height: 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 30px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+
+        }
+        .x4{
+            /* background-color: blue; */
+            width: 200px;
+            height: 50px;
+            margin-top: 25px;
+            margin-left: 20px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+
+        }
+        .x5{
+            /* background-color: cornsilk; */
+            width: 200px;
+            height: 50px;
+            margin-top: 25px;
+            margin-left: 450px;
+            position: absolute;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .F2:hover{
+            transform: scale(1.05);
+            /* transition: all 0.1s; */
+            cursor: pointer;   
+
+        }
+        .x6{
+            background-image: url(cofe.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .F3:hover{
+            transform: scale(1.05);
+            cursor: pointer;   
+            
+        }
+        .x7{
+            background-image: url(p3.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .F4:hover{
+            transform: scale(1.05);
+            cursor: pointer;   
+            /* dak dai ler page */
+
+        }
+        .p3{
+            /* background-color: blue; */
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            margin-left: 620px;
+            margin-top: 76%;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+
+        }
+        .F7{
+            /* background-color: rgba(0, 0, 0, 0.431); */
+            width:76% ;
+            height: 600px;
+            margin-left: 620px;
+            margin-top: 80%;
+            position: absolute;
+            /* overflow: hidden; */
+            display: flex;
+        }
+        .x10{
+            background-image: url(p5.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .x11{
+            background-image: url(p8.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .x12{
+            background-image: url(p11.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .p10{
+            /* background-color: blue; */
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            margin-left: 620px;
+            margin-top: 103%;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+
+        }
+        .F12{
+            /* background-color: rgba(0, 0, 0, 0.431); */
+            width:76% ;
+            height: 600px;
+            margin-left: 620px;
+            margin-top: 107%;
+            position: absolute;
+            /* overflow: hidden; */
+            display: flex;
+        }
+        .x21{
+            background-image: url(q1.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .x22{
+            background-image: url(q2.jpeg);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        .x23{
+            background-image: url(q3.png);
+            background-size: cover;
+            width: 100%;
+            height: 55%;
+            border-top-right-radius: 60px;
+            border-top-left-radius: 60px;
+        }
+        
+        .oo1{
+            /* background-color: rgba(0, 0, 0, 0.508); */
+            width: 100%;
+            height: 1700px;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            overflow: scroll;
+
+        }
+        .z1{
+            background-image: url(qqqq.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 700px;
+            margin-top: 10px;
+            position: relative;
+            /* position: static; */
+        }
+        .g55{
+            /* background-color: black; */
+            width: 100%;
+            height: 300px;
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="oo1">
+            <div class="c1">
+                <div class="logo">
+                    <div class="t2">
+                        <img src="bg_logo.png" alt="" width="20%" height="150px" hspace="5px" vspace="5px" align="left">
+                        <div class="l1">
+                            <p style="font-size: 30px;">Business <br>
+                            <h1 style="font-size: 30px;">
+                                <b style="font-size:40px ;" class="t2">Cambodia</b>
+                            </h1>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="search">
+                    <input type="text" placeholder="   Search">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="" style="background-color: red; color: white;">ទំព័រដើម</a>
+                        </li>
+                        <li>
+                            <a href="2proj.html">ហិរញ្ញវត្ថុ</a>
+                        </li>
+                        <li>
+                            <a href="">ចាប់ផ្តើមអាជីវកម្ម</a>
+                        </li>
+                        <li>
+                            <a href="">អចលនទ្រព្យ</a>
+                        </li>
+                        <li>
+                            <a href="">ភាពជាអ្នកដឹកនាំ</a>
+                        </li>
+                        <li>
+                            <a href="">កំពូលអ្នកលក់</a>
+                        </li>
+                        <li>
+                            <a href="">មុខរបរបច្ចេកវិទ្យា</a>
+                        </li>
+                        <li>
+                            <a href="">ព័ត៌មានថ្មីៗ</a>
+                        </li>
+                        <li>
+                            <a href="">អត្ថបទ PR</a>
+                        </li>
+                        <li>
+                            <a href="">របាយការណ៍</a>
+                        </li>
+                        <li>
+                            <a href="">ពិព័រណ៍មុខរបរ 2022</a>
+                        </li>
+                        <li>
+                            <a href="">មុខរបរកសិកម្ម</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            
+            
+            <div class="k1">
+                <p>អត្ថបទប្រចាំថ្ងៃថ្មីៗ</p>
+            </div>
+            <div class="k2">
+                <b>
+                    ដើម្បីបង្កើនចំណេះដឹងក្នុងការធ្វើអាជីវកម្ម
+                </b>
+            </div>
+            <div class="photo">
+            
+                <div class="day">
+                    October 4 2022
+                </div>
+                <div class="w">
+                    មានលុយត្រឹម១០០$ ក៏ចេញរកស៊ីបាន! ! របរពេញនិយមទាំង៥ ចាប់ផ្តើមដំបូងចាយទុនតិចតួចបំផុត
+                </div>
+                <div class="bo">
+                    <ul>
+                        <li>
+                            <a href="https://business-cambodia.com/sales/article/3things-costumers-hate-the-most">បន្តការអាន</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p2">
+                <b>ពាណិជ្ជកម្ម</b><br><br>
+                <b>
+                    អត្ថបទពេញនិយមប្រចាំខែ
+                </b>
+            </div>
+            <div class="o1">
+            </div>
+            <div class="F1">
+                <div class="F2">
+                    <div class="x1"></div>
+                    <div class="x2">October 2 2022</div>
+                    <div class="x3">កំពុងជំពាក់លុយគេ ហើយចង់សងឱ្យឆាប់អស់! នេះជាផ្លូវ៣ ដែលអ្នកគួរធ្វើឱ្យបានលឿនបំផុត</div>
+                    <div class="x4">Meng Songly</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 13.2K</div>
+                </div>
+                <div class="F3">
+                    <div class="x6"></div>
+                    <div class="x2">October 4 2022</div>
+                    <div class="x3">ចំណេញលុយ១ពាន់ដុល្លារ កន្លែងធំ២បើកបង្រៀន ធ្វើនំ ឆុងកាហ្វេ ធ្វើម្ហូប ហ្វ្រីៗមិនយកលុយមួយរៀល</div>
+                    <div class="x4">ធី ស្រីល័ក្ខ</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 9.2K</div>
+                </div>
+                <div class="F4">
+                    <div class="x7"></div>
+                    <div class="x2">October 1 2022</div>
+                    <div class="x3">មេធំធនាគារអេស៊ីលីដា និងមហាសេដ្ឋី សុខ គង់ បង្ហើបក្បួនចាយលុយ ធ្វើឱ្យជីវភាពធូរធារ ចៀសផុតពីបំណុល
+                    </div>
+                    <div class="x4">Sokly So</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 12.2K</div>
+                </div>
+            </div>
+            <div class="p3">
+                <b>អត្ថបទថ្មីៗ</b>
+            </div>
+            <div class="F7">
+                <div class="F2">
+                    <div class="x10"></div>
+                    <div class="x2">October 5 2022</div>
+                    <div class="x3">ស្ងាត់ៗ មាសឡើងថ្លៃខ្ពស់ឡើងវិញ ខណៈនេះជាតម្លៃនៅលើទីផ្សារអន្តរជាតិ គិតត្រឹមថ្ងៃនេះ</div>
+                    <div class="x4">Sokly So</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 22.2K</div>
+                </div>
+                <div class="F3">
+                    <div class="x11"></div>
+                    <div class="x2">October 5 2022</div>
+                    <div class="x3">កុំជុះតាមដំរី! អ្នកគ្មានបទពិសោធ៍ កុំប្រថុយចងការធនាគារមករកស៊ីរបរទាំង៥ ប្រភេទនេះឱ្យសោះ</div>
+                    <div class="x4">ធី ស្រីល័ក្ខ</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 10.2K</div>
+                </div>
+                <div class="F4">
+                    <div class="x12"></div>
+                    <div class="x2">October 1 2022</div>
+                    <div class="x3">ដំណឹងរីករាយ! នៅចុងឆ្នាំ២០២២នេះ គម្រោងសំខាន់ចំនួន ២ នៅកម្ពុជានឹងសម្រេចរួចរាល់១០០%
+                    </div>
+                    <div class="x4">Sokly So</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 12.2K</div>
+                </div>
+            </div>
+            <div class="p10">
+                <b>អត្ថបទ PR</b>
+            </div>
+            <div class="F12">
+                <div class="F2">
+                    <div class="x21"></div>
+                    <div class="x2">October 5 2022</div>
+                    <div class="x3">ឡូយកប់! សណ្ឋាគារ១កន្លែងនៅភ្នំពេញ កំពុងបង្កប់បារដំបូងគេនៅស្រុកខ្មែរ ដែលច្នៃពន្លឺភ្លឺចេញពីរថយន្ត
+                    </div>
+                    <div class="x4">Sokly So</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 2.2K</div>
+                </div>
+                <div class="F3">
+                    <div class="x22"></div>
+                    <div class="x2">October 6 2022</div>
+                    <div class="x3">ក្រុមហ៊ុន ហនុមាន អ៊ីស្ទេត នឹងបើកលក់គម្រោងថ្មីមួយទៀត នៅលើមហាវិថី ឈ្នះឈ្នះ</div>
+                    <div class="x4">ធី ស្រីល័ក្ខ</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 10.2K</div>
+                </div>
+                <div class="F4">
+                    <div class="x23"></div>
+                    <div class="x2">October 1 2022</div>
+                    <div class="x3">ធនាគារ កាណាឌីយ៉ា បើកសម្ពោធជាផ្លូវការនូវ Smart Branch សាខា សែនសុខ
+                    </div>
+                    <div class="x4">Sokly So</div>
+                    <div class="x5"><i class="fa-solid fa-eye"></i> &nbsp; 12.2K</div>
+                </div>
+                <div class="g55">
+
+                </div>
+            </div>
+            
+            </div>
+    </div>      
+        
+    <div class="z1"></div>
+    <img src="rrrr.png" alt="" width="100%" height="400px">
+</body>
+</html>

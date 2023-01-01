@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #kk {
+        background-color: aqua;
+        height: 300px;
+        width: 400px;
+    }
+</style>
+
+<body>
+    <div id="demo">
+        CSS
+    </div>
+    <input type="button" value="Clink me" onclick="test()">
+
+    <input type="button" value="alert" onclick="alert1()">
+    <input type="button" value="Blue" onclick="co()">
+
+    <div id="kk">
+        <img src="ro.jpeg" alt="" width="100%" height="100%">
+    </div>
+    <input type="button" value="Hid" onclick="hide()">
+    <input type="button" value="show" onclick="show()">
+
+    <input type="button" value="Change" onclick="Change1()">
+</body>
+<script>
+    function test() {
+        document.getElementById("demo").innerHTML = ('HTML')
+        document.getElementById("demo").style.color = "red"
+    }
+    function alert1() {
+        alert("HELLO JAVASCRIP")
+    }
+    function co() {
+        document.getElementById("demo").innerHTML = ('HTML')
+        document.getElementById("demo").style.color = "Blue"
+    }
+
+    function hide() {
+        document.getElementById("kk").style.display = "none";
+    }
+    function show() {
+        document.getElementById("kk").style.display = "block";
+    }
+
+    function Change1() {
+        document.getElementById("kk").attributes("src", "god.jpeg")
+    }
+</script>
+
+</html>

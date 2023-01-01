@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        .container {
+            margin: auto;
+        }
+
+        .button-class {
+            width: 800px;
+            height: 70px;
+            /* background-color: grey; */
+            margin: auto;
+
+        }
+
+        button {
+            width: 190px;
+            height: 80px;
+            font-size: 20px;
+        }
+
+        .page-class {
+            margin: auto;
+            width: 800px;
+            height: 600px;
+            background-color: rgba(0, 0, 0, 0.636);
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .page1 {
+            float: left;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            /* justify-items: center; */
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 4button  -->
+        <div class="button-class">
+            <button id="acc"> 1. Account</button>
+            <button id="pro"> 2. Profile</button>
+            <button id="wan"> 3. Waning</button>
+            <button id="fis"> 4. Finish</button>
+        </div>
+        <div class="page-class">
+            <div class="page1">Account</div>
+            <div class="page1">Profile</div>
+            <div class="page1">Waning</div>
+            <div class="page1">Finish</div>
+        </div>
+
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        var numpage = $('.page1').length;
+        $('.page1').hide();
+        var i = 0;
+        $('.page1').eq(i).show();
+
+        $('#acc').click(function () {
+            $('.page1').eq(1).hide();
+            $('.page1').eq(2).hide();
+            $('.page1').eq(3).hide();
+            $('.page1').eq(0).show();
+        })
+
+        $('#pro').click(function () {
+            $('.page1').eq(0).hide();
+            $('.page1').eq(2).hide();
+            $('.page1').eq(3).hide();
+            $('.page1').eq(1).show();
+
+        })
+        $('#wan').click(function () {
+            $('.page1').eq(1).hide();
+            $('.page1').eq(3).hide();
+            $('.page1').eq(0).hide();
+            $('.page1').eq(2).show();
+
+        })
+        $('#fis').click(function () {
+            $('.page1').eq(0).hide();
+            $('.page1').eq(1).hide();
+            $('.page1').eq(2).hide();
+            $('.page1').eq(3).show();
+        })
+    })
+</script>
+
+</html>

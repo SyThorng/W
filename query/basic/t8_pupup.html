@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo {
+            width: 100%;
+            height: 1500px;
+            background-color: gray;
+            position: flex;
+
+        }
+
+        #hide {
+            float: right;
+        }
+
+        #hide,
+        #pop {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="demo"></div> -->
+    <button id="hide">Hide</button>
+    <button id="pop">popup</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#pop').click(function () {
+
+            var pop = ' <div class="demo"></div> ';
+            $('body').append(pp);
+        })
+    })
+</script>
+
+</html>
